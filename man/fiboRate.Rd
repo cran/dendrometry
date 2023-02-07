@@ -4,18 +4,18 @@
 \alias{fiboRate}
 \title{Fibonacci series ratio}
 \usage{
-fiboRate(n = 10, PrintSer = FALSE, Uo = 0, U1 = 1)
+fiboRate(n, PrintSer = FALSE, Uo = 0, U1 = 1)
 }
 \arguments{
 \item{n}{integer, the size of the series.}
 
-\item{PrintSer}{Logical, indicating if the series should be printed.}
+\item{PrintSer}{logical, indicating if the series should be printed.}
 
 \item{Uo, U1}{integer, the first number of the series.}
 }
 \value{
-Either a real number, result of the rate of nth and (n-1)th numbers
-in Fibonacci series.
+Either a numeric, result of the rate of \code{nth} and \code{(n-1)th} numbers
+in Fibonacci series or all \code{(n-1)th} those rates.
 }
 \description{
 Computes rates from Fibonacci series.

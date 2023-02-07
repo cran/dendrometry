@@ -7,17 +7,17 @@
 rad(degree)
 }
 \arguments{
-\item{degree}{A numeric vector of radian values to be converted}
+\item{degree}{A numeric vector of degree values to be converted.}
 }
 \value{
-Returns a vector of radian values.
+A vector of radian values.
 }
 \description{
-Converts angle values from  degree to radian.
+Converts angle values from degree to radian.
 }
 \examples{
 rad(180)
 }
 \seealso{
-\code{\link{deg}}, the the complement of \code{rad}
+\code{\link{deg}}, the reciprocal of \code{rad}.
 }

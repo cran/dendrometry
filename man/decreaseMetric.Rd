@@ -7,13 +7,15 @@
 decreaseMetric(dmh, dbh, mh, bh = 1.3)
 }
 \arguments{
-\item{dmh}{numeric, the diameter at middle height.}
+\item{dmh}{numeric, the diameter at middle height in centimeter (cm).}
 
-\item{dbh}{numeric, the diameter at breast height.}
+\item{dbh}{numeric, the diameter at breast height in centimeter (cm).}
 
-\item{mh}{numeric, the middle (or cut) height.}
+\item{mh}{numeric, the middle (or cut) height in meter (m).}
 
-\item{bh}{Either a numeric value standing for the breast height of all trees or a numeric vector standing for the breast height of each tree. Default is \code{1.3}.}
+\item{bh}{Either a numeric value standing for the breast height in meter (m)
+of all trees or a numeric vector standing for the breast height of each tree.
+Default is \code{1.3}.}
 }
 \value{
 Metric decay
@@ -27,4 +29,7 @@ between the height at mid-height and that at breast height.
 \examples{
 decreaseMetric(dmh = 40, dbh = 90, mh = 7)
 decreaseMetric(45, 85, 9)
+}
+\seealso{
+\code{reducecoef}
 }

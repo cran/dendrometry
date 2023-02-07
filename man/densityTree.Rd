@@ -7,11 +7,11 @@
 densityTree(number, area, overall = TRUE)
 }
 \arguments{
-\item{number}{numeric vector, individual count.}
+\item{number}{numeric vector of individual count in each plot.}
 
 \item{area}{numeric, area of a plot.}
 
-\item{overall}{a logical value. If \code{TRUE}, an overall density is
+\item{overall}{logical. If \code{TRUE}, an overall density is
 computed; if \code{FALSE}, density is computed for each plot.
 Default is \code{TRUE}.}
 }
@@ -20,4 +20,8 @@ Vector of density.
 }
 \description{
 Density per plot.
+}
+\details{
+If every plot have same area, \code{area} is a numeric otherwise
+\code{area} is a vector of each plot area.
 }

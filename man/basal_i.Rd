@@ -2,19 +2,32 @@
 % Please edit documentation in R/dendrometry.R
 \name{basal_i}
 \alias{basal_i}
+\alias{basal2dbh}
 \title{Individual basal area}
 \usage{
-basal_i(dbh)
+basal2dbh(basal)
+
+basal_i(dbh, circum = NULL)
 }
 \arguments{
 \item{dbh}{numeric vector of diameter.}
+
+\item{circum}{numeric vector of circumference. Is used only when \code{dbh}
+is not given.}
+
+\item{basal}{numeric, individual basal area.}
 }
 \value{
-Vector of individual basal area.
+\code{basal_i} returns individual basal area while \code{basal2dbh} returns DBH.
 }
 \description{
-Individual basal area
+The area of a circle of diameter \code{dbh}.
+}
+\details{
+If \code{circum} is given, \code{dbh} is not used.
 }
 \examples{
-basal_i(dbh = 0.1)
+basal_i(dbh = 10)
+basal_i(circum = 31.41)
+basal2dbh(78.53982)
 }

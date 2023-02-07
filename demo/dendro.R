@@ -57,3 +57,4 @@ Diameter <- c(Diam, Dm)
 names(Diameter) <- c("Simple mean of Diameter(cm)" ,"Mean diameter(cm)")
 Diameter
 
+rm(Diam, Diameter, Dm, Height, Height.Mean, Lorey, Tree)

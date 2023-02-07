@@ -9,21 +9,23 @@ fibonacci(n, PrintFib = FALSE, Uo = 0, U1 = 1)
 \arguments{
 \item{n}{integer, the size of the series.}
 
-\item{PrintFib}{Logical, indicating if the series should be printed.}
+\item{PrintFib}{logical, indicating if the series should be printed.}
 
-\item{Uo, U1}{integer, the first number of the series.}
+\item{Uo, U1}{integer, the first two numbers of the series.}
 }
 \value{
-Either a real number, result of the function or a vector of all
-the series.
+Either an integer, result of the function or a vector of \code{n} first
+numbers of the series.
 }
 \description{
 Generates numbers from Fibonacci series.
 }
+\details{
+The series equation is Un = U_(n-2) /U_(n-1).
+}
 \examples{
 fibonacci(n = 10, PrintFib = TRUE)
 fibonacci(n = 10, Uo = 1, U1 = 3, PrintFib = FALSE)
-#' @details The series equation is Un = U_(n-2) /U_(n-1).
 }
 \seealso{
 \code{\link{fiboRate}}

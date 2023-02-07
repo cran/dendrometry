@@ -8,7 +8,7 @@ height(distance, top, base, type = c("angle", "slope"),
        angleUnit = c("deg", "rad"))
 }
 \arguments{
-\item{distance}{a numeric vector of the horizontal distance between object
+\item{distance}{numeric vector of the horizontal distance between object
 and the person who measures angle.}
 
 \item{top, base}{numeric vector of top angle and ground angle respectively
@@ -22,7 +22,7 @@ and the person who measures angle.}
 radian. Default is \code{"deg"}.}
 }
 \value{
-Returns a vector of heights.
+A vector of heights.
 }
 \description{
 Computes the height of tree, pillar, girder, mast or any

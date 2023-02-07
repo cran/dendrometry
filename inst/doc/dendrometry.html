@@ -11,7 +11,7 @@
 
 <meta name="author" content="Narcisse Yehouenou" />
 
-<meta name="date" content="2022-08-19" />
+<meta name="date" content="2023-02-07" />
 
 <title>dendrometry: Narcisse’ Useful Functions (in Progress)</title>
 
@@ -1386,8 +1386,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -1395,16 +1395,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -1525,7 +1518,7 @@ div.tocify {
 <h1 class="title toc-ignore">dendrometry: Narcisse’ Useful Functions (in
 Progress)</h1>
 <h4 class="author">Narcisse Yehouenou</h4>
-<h4 class="date">2022-08-19</h4>
+<h4 class="date">2023-02-07</h4>
 
 </div>
 
@@ -1557,16 +1550,16 @@ provides a BibTeX entry for La-TeX users.</p>
 <pre><code>#&gt; 
 #&gt; To cite package &#39;dendrometry&#39; in publications use:
 #&gt; 
-#&gt;   Narcisse Yehouenou (2022). dendrometry: Forest Estimations and
-#&gt;   Dendrometric Computations. R package version 0.0.1.
+#&gt;   Narcisse Yehouenou (2023). dendrometry: Forest Estimations and
+#&gt;   Dendrometric Computations. R package version 0.0.2.
 #&gt; 
 #&gt; Une entrée BibTeX pour les utilisateurs LaTeX est
 #&gt; 
 #&gt;   @Manual{,
 #&gt;     title = {dendrometry: Forest Estimations and Dendrometric Computations},
 #&gt;     author = {Narcisse Yehouenou},
-#&gt;     year = {2022},
-#&gt;     note = {R package version 0.0.1},
+#&gt;     year = {2023},
+#&gt;     note = {R package version 0.0.2},
 #&gt;   }</code></pre>
 </div>
 </div>

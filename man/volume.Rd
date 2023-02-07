@@ -53,5 +53,5 @@ volume(height = 10, dm = 35, do = 45, ds = 15, method = "newton")
 volume(height = 10, circum = 100, circumo = 200, circums = 110, method = "newton")
 }
 \seealso{
-\code{\link{shape}}, for tree real volume.
+\code{\link{shape}}, for shape coefficient.
 }

@@ -12,7 +12,7 @@ angle2slope(angle, angleUnit = c("deg", "rad"))
 \item{angleUnit}{The unit of \code{angle}. Either \code{"deg"}, \code{"rad"}. Default is \code{"deg"}.}
 }
 \value{
-Returns a vector of slope values.
+A vector of slope values.
 }
 \description{
 Converts angle values to  slope values.
@@ -25,5 +25,5 @@ angle2slope(1.047198, "rad")
 angle2slope(0.2617994, angleUnit = "rad")
 }
 \seealso{
-\code{\link{slope2angle}}, the the complement of \code{angle2slope}.
+\code{\link{slope2angle}}, the reciprocal of \code{angle2slope}.
 }

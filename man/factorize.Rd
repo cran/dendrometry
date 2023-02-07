@@ -8,13 +8,18 @@
 factorize(data, binary = FALSE)
 }
 \arguments{
-\item{data}{A data set containing ....}
+\item{data}{data frame or tibble data set.}
 
-\item{binary}{Logical indicating if binary data should be considered as factor}
+\item{binary}{logical indicating if binary data should be considered as factor.
+Default is \code{FALSE}.}
 }
 \value{
-Data frame with all character vectors changed to factor vectors
+Data frame with all character vectors changed to factor vectors.
 }
 \description{
-Changes character vectors to factor vectors
+Changes character vectors of a data set to factor vectors.
+}
+\details{
+When \code{binary = TRUE}, variables stored as numeric and which have
+exactly two levels are changed to factor.
 }

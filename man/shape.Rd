@@ -21,8 +21,8 @@ The shape coefficient.
 \description{
 The shape coefficient of the tree is the ratio of the actual
 volume of the tree to the volume of a cylinder having as base the surface of
-the section at 1.3 m (or a given breast height) and as length, the height of
-the tree.
+the section at 1.3 m (or a given breast height) and as length, the height
+(at bole level) of the tree.
 }
 \examples{
 shape(volume = 10000, 11, dbh = 40)

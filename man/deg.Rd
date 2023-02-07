@@ -7,10 +7,10 @@
 deg(radian)
 }
 \arguments{
-\item{radian}{A vector of degree values to be converted}
+\item{radian}{A vector of radian values to be converted.}
 }
 \value{
-Returns a vector of radian values.
+A vector of degree values.
 }
 \description{
 Converts angle values from  radian to degree.
@@ -19,5 +19,5 @@ Converts angle values from  radian to degree.
 deg(pi/2)
 }
 \seealso{
-\code{\link{rad}}, the complement of \code{deg}
+\code{\link{rad}}, the reciprocal of \code{deg}.
 }

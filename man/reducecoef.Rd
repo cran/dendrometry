@@ -17,14 +17,17 @@ The reduction coefficient.
 \description{
 The reduction coefficient is the ratio between the difference
 in size at breast height and mid-height on the one hand, and the size at
-breast height on the other. . It is thus the complement to 1 of the
+breast height on the other. It is thus the complement to 1 of the
 coefficient of decrease.
 }
 \details{
 Both \code{middle} and \code{breast} arguments should be of the
-same type (either diameter or circumference). Don't mix.
+same type (either diameter or circumference). Not mixture.
 }
 \examples{
 reducecoef(30, 120)
 reducecoef(middle = 40, breast = 90)
+}
+\seealso{
+\code{decrease}
 }

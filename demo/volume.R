@@ -8,11 +8,11 @@ volume(height = hauteur, dm = diametreMedian, method = "huber")
 volume(height = hauteur, dm = diametreMedian, method = "huber",
        successive = TRUE, log = tree)
 
-#SMALLIAN
+#SMALIAN
 volume(height = hauteur, do = diametreBase, ds = diametreSection,
-       method = "smallian")
+       method = "smalian")
 volume(height = hauteur, do = diametreBase, ds = diametreSection,
-       method = "smallian", successive = TRUE, log = tree)
+       method = "smalian", successive = TRUE, log = tree)
 
 #CONE
 volume(height = hauteur, do = diametreBase, ds = diametreSection,

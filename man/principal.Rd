@@ -9,14 +9,14 @@ principal(angle, angleUnit = c("deg", "rad"))
 \arguments{
 \item{angle}{numeric vector of angle.}
 
-\item{angleUnit}{The unit of \code{angle}. Either "deg", "rad".
+\item{angleUnit}{The unit of \code{angle}. Either "deg" or "rad".
 Default is "deg".}
 }
 \value{
-A matrix of principal measure of angle in radian and in degree units.
+A matrix of principal measure of angle in both radian and in degree units.
 }
 \description{
-\code{principal} returns the principal measure of an angle value.
+Principal measure of an angle value.
 Principal measure ranges from -pi to pi for radian unit while it ranges from
 -180 to 180 for degree unit.
 }

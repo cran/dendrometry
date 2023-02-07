@@ -12,7 +12,7 @@ decrease(middle, breast)
 \item{breast}{numeric, the diameter or circumference at breast height.}
 }
 \value{
-The decrease coefficient
+A vector of decrease coefficients.
 }
 \description{
 This coefficient expresses the ratio between the diameter
@@ -21,7 +21,7 @@ This coefficient expresses the ratio between the diameter
 }
 \details{
 Both \code{middle} and \code{breast} arguments should be of the
-same type (either diameter or circumference). Don't mix.
+same type (either diameter or circumference). Not mixture.
 }
 \examples{
 decrease(30, 120)

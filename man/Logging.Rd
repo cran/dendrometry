@@ -3,7 +3,7 @@
 \docType{data}
 \name{Logging}
 \alias{Logging}
-\title{Tree metrics for logging (in progress)}
+\title{Tree metrics for logging}
 \format{
 Data frame with twenty five observations and eight variables:
 \describe{
@@ -29,7 +29,7 @@ data(Logging)
 Data frame of 24 rows and 8 columns containing tree measures.
 }
 \examples{
-#demo(dendro)
+#demo(volume)
 }
 \author{
 Narcisse Yehouenou \email{narcisstar211@gmail.com}

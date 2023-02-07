@@ -4,13 +4,13 @@
 \alias{dbh}
 \title{Diameter or DBH}
 \usage{
-dbh(perimeter)
+dbh(circum)
 }
 \arguments{
-\item{perimeter}{numeric vector of circumference.}
+\item{circum}{numeric vector of circumference.}
 }
 \value{
-Diameter or \code{DBH} vector.
+A vector of diameter or \code{DBH}.
 }
 \description{
 Computes diameter based on circumference. If circumference (perimeter) at breast height is given, then Diameter at Breast Height (\code{DBH}) is obtained. Used in dendrometry for trees' \code{DBH} calculation.
@@ -20,5 +20,5 @@ x = seq(1, 5, .4)
 dbh(x)
 }
 \seealso{
-\code{\link{height}}
+\code{\link{height}} for tree  height, \code{\link{circum}} for diameter.
 }

@@ -7,8 +7,7 @@
 skewness(x)
 }
 \arguments{
-\item{x}{numeric vector.
-The skewness.}
+\item{x}{numeric vector.}
 }
 \value{
 The skewness coefficient.
