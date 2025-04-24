@@ -2,23 +2,34 @@
 % Please edit documentation in R/dendrometry.R
 \name{dbh}
 \alias{dbh}
-\title{Diameter or DBH}
+\alias{circum}
+\title{Diameter (DBH) and Circumference}
 \usage{
 dbh(circum)
+
+circum(dbh)
 }
 \arguments{
-\item{circum}{numeric vector of circumference.}
+\item{circum}{numeric, vector of circumference.}
+
+\item{dbh}{numeric, vector of diameter.}
 }
 \value{
-A vector of diameter or \code{DBH}.
+\code{dbh}, returns diameter and \code{circum}, returns circumference.
 }
 \description{
-Computes diameter based on circumference. If circumference (perimeter) at breast height is given, then Diameter at Breast Height (\code{DBH}) is obtained. Used in dendrometry for trees' \code{DBH} calculation.
+\code{DBH} computes diameter (at breast height) based on
+circumference (at breast height). \cr
+\code{circum} computes circumference (at breast height) based on diameter
+(at breast height). \cr
+They are based on circle diameter and perimeter formulas.
 }
 \examples{
-x = seq(1, 5, .4)
-dbh(x)
+perimeter <- seq(30, 60, 1.4)
+diameter <- dbh(perimeter)
+circum(diameter)
+
 }
 \seealso{
-\code{\link{height}} for tree  height, \code{\link{circum}} for diameter.
+See also \code{\link{height}} for tree  height.
 }

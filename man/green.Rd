@@ -7,7 +7,7 @@
 green(density)
 }
 \arguments{
-\item{density}{numeric vector of the density.}
+\item{density}{numeric, vector of the density.}
 }
 \value{
 Index of Green.

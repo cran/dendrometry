@@ -14,7 +14,8 @@ fiboRate(n, PrintSer = FALSE, Uo = 0, U1 = 1)
 \item{Uo, U1}{integer, the first number of the series.}
 }
 \value{
-Either a numeric, result of the rate of \code{nth} and \code{(n-1)th} numbers
+Either a numeric, result of the rate of \code{nth} and \code{(n-1)th}
+ numbers
 in Fibonacci series or all \code{(n-1)th} those rates.
 }
 \description{
@@ -22,12 +23,13 @@ Computes rates from Fibonacci series.
 }
 \details{
 The series equation is Un = U_(n-2) /U_(n-1).
-The function returns golden number when Uo = 0, and U1 = 1. Larger n is, more precise the number (result) is.
+The function returns golden number when Uo = 0, and U1 = 1. Larger n is, more
+ precise the number (result) is.
 }
 \examples{
-##Golden number (Le Nombre d'Or)
+## Golden number (Le Nombre d'Or)
 fiboRate(n = 18, PrintSer = FALSE, Uo = 0, U1 = 1)
-##(1+sqrt(5))/2
+## (1+sqrt(5))/2
 fiboRate(n = 10, PrintSer = TRUE, Uo = 0, U1 = 1)
 }
 \seealso{

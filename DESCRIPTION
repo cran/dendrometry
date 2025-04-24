@@ -1,8 +1,8 @@
 Package: dendrometry
 Type: Package
-Date: 2023-02-07
+Date: 2025-04-24
 Title: Forest Estimations and Dendrometric Computations
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(person(given = "Narcisse", family = "Yehouenou", 
                     role = c("aut", "cre"), email = "narcisstar211@gmail.com"),
   person("Information and Communication Technology for you ONG (ICT4U-ONG)", 
@@ -25,13 +25,15 @@ License: GPL-3
 Depends: R (>= 3.5.0)
 VignetteBuilder: knitr
 Suggests: knitr, rmarkdown
+Imports: graphics, ForestFit
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
+Config/usethis/last-upkeep: 2025-04-23
 NeedsCompilation: no
-Packaged: 2023-02-07 12:13:22 UTC; Narcisse
+Packaged: 2025-04-24 20:51:26 UTC; Narcisse
 Author: Narcisse Yehouenou [aut, cre],
   Information and Communication Technology for you ONG (ICT4U-ONG) [fnd]
 Maintainer: Narcisse Yehouenou <narcisstar211@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-02-07 12:32:32 UTC
+Date/Publication: 2025-04-24 21:20:02 UTC

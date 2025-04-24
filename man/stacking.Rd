@@ -13,5 +13,6 @@ stacking(data)
 A vector of all element of the argument \code{data}.
 }
 \description{
-Stacking all columns of a data frame or vectors of a list into a single vector.
+Stacking all columns of a data frame or vectors of a list into
+a single vector.
 }

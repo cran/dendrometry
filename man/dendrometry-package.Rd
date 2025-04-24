@@ -12,12 +12,12 @@ Computation of dendrometric and structural parameters from forest inventory data
 Type \code{RShowDoc("dendrometry", package = "dendrometry")} to read a HTML
 user guide vignette.
 
-Type \code{RShowDoc("dendrometry_pdf", package = "dendrometry")} to read a
-PDF user guide vignette.
 
-Type \code{demo(dendro, package = "dendrometry")} for a demo of dendrometric computations. Click on \code{Index} bellow to see the index of the package.
+Type \code{demo(dendro, package = "dendrometry")} for a demo of dendrometric
+computations. Click on \code{Index} bellow to see the index of the package.
 
-Type \code{demo(volume, package = "dendrometry")} for a demo of dendrometric computations. Click on \code{Index} bellow to see the index of the package.
+Type \code{demo(volume, package = "dendrometry")} for a demo of dendrometric
+ computations. Click on \code{Index} bellow to see the index of the package.
 }
 \author{
 \strong{Maintainer}: Narcisse Yehouenou \email{narcisstar211@gmail.com}

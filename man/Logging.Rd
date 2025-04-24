@@ -7,8 +7,8 @@
 \format{
 Data frame with twenty five observations and eight variables:
 \describe{
-  \item{tree}{Tree name}
-  \item{hauteur}{Stem lenght in meter (m).}
+  \item{tree}{Tree name (scientific gender).}
+  \item{hauteur}{Stem length in meter (m).}
   \item{diametreMedian}{Tree median diameter in centimeter (cm).}
   \item{perimetreMedian}{Tree median circumference in centimeter (cm).}
 
@@ -29,7 +29,7 @@ data(Logging)
 Data frame of 24 rows and 8 columns containing tree measures.
 }
 \examples{
-#demo(volume)
+# demo(volume)
 }
 \author{
 Narcisse Yehouenou \email{narcisstar211@gmail.com}

@@ -8,10 +8,13 @@
 Data frame with ten observations and five variables:
 \describe{
   \item{circum}{Tree circumference in centimeter (cm).}
-  \item{dist}{Horizontal distance between the observer (person who measure angles) and the tree circumference in centimeter (cm).}
-  \item{up}{Up angle measure in degree (°).}
-  \item{down}{Down angle measure in degree (°).}
-  \item{fut}{Bole angle measure in degree (°); Bole is where the first branch occurs on the trunk. This measure is usually useful for timber estimation on wood market.}
+  \item{dist}{Horizontal distance between the person measuring angles and
+  the tree (m).}
+  \item{up}{Angle measured for the top part of the tree in degree (\\u00b0).
+  It is used to calculate the total tree height.}
+  \item{down}{Angle measured for the bottom part of the tree in degree (\\u00b0).}
+  \item{fut}{Bole angle measure in degree (\\u00b0); Bole is where the first branch
+  occurs on the trunk. It is used to calculate the merchantable tree height.}
 }
 }
 \source{
@@ -24,7 +27,7 @@ data(Tree)
 Data frame of 10 rows and 5 columns containing tree measures.
 }
 \examples{
-#demo(dendro)
+# demo(dendro)
 }
 \author{
 Narcisse Yehouenou \email{narcisstar211@gmail.com}

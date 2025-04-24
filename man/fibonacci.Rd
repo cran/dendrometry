@@ -14,8 +14,8 @@ fibonacci(n, PrintFib = FALSE, Uo = 0, U1 = 1)
 \item{Uo, U1}{integer, the first two numbers of the series.}
 }
 \value{
-Either an integer, result of the function or a vector of \code{n} first
-numbers of the series.
+Either an integer, result of the function or a vector of \code{n}
+first numbers of the series.
 }
 \description{
 Generates numbers from Fibonacci series.

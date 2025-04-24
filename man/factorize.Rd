@@ -10,7 +10,8 @@ factorize(data, binary = FALSE)
 \arguments{
 \item{data}{data frame or tibble data set.}
 
-\item{binary}{logical indicating if binary data should be considered as factor.
+\item{binary}{logical indicating if binary numeric data should be considered
+as factor.
 Default is \code{FALSE}.}
 }
 \value{

@@ -8,7 +8,8 @@ volume(height, dm, do, ds, circum, circumo, circums,
        method = "huber", successive = FALSE, log)
 }
 \arguments{
-\item{height}{numeric, stem (whole bole) length. When \code{successive} is "\code{TRUE}",
+\item{height}{numeric, stem (whole bole) length. When \code{successive} is
+"\code{TRUE}",
 it stands for log length.}
 
 \item{do, dm, ds}{numeric, respectively base, median and end diameter.}
@@ -50,7 +51,10 @@ volume(height = 10, circumo = 200, circums = 110, method = "cone")
 
 ## newton method
 volume(height = 10, dm = 35, do = 45, ds = 15, method = "newton")
-volume(height = 10, circum = 100, circumo = 200, circums = 110, method = "newton")
+volume(
+  height = 10, circum = 100, circumo = 200, circums = 110,
+  method = "newton"
+)
 }
 \seealso{
 \code{\link{shape}}, for shape coefficient.

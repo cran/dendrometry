@@ -18,5 +18,5 @@ Skewness coefficient
 \examples{
 data("Logging")
 skewness(Logging$hauteur)
-hist(Logging$hauteur,3)
+hist(Logging$hauteur, 3)
 }

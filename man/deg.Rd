@@ -2,22 +2,33 @@
 % Please edit documentation in R/dendrometry.R
 \name{deg}
 \alias{deg}
-\title{Radians to degrees}
+\alias{rad}
+\alias{degree}
+\alias{radian}
+\title{Degree and Radian}
 \usage{
 deg(radian)
+
+rad(degree)
 }
 \arguments{
-\item{radian}{A vector of radian values to be converted.}
+\item{radian}{numeric, vector of radian values to be converted to degrees.}
+
+\item{degree}{numeric, vector of degree values to be converted to radians.}
 }
 \value{
-A vector of degree values.
+\code{deg} returns vector of degree values while
+\code{rad} returns vector of radian values.
 }
 \description{
-Converts angle values from  radian to degree.
+\code{deg} converts angle values from radians to degrees. \cr
+\code{rad} converts angle values from degrees to radians.
 }
 \examples{
-deg(pi/2)
+deg(pi / 2)
+rad(180)
+
 }
 \seealso{
-\code{\link{rad}}, the reciprocal of \code{deg}.
+\code{\link{principal}}.
 }

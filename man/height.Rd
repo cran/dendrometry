@@ -2,22 +2,27 @@
 % Please edit documentation in R/dendrometry.R
 \name{height}
 \alias{height}
-\title{Height of tree or vertical object.}
+\title{Height of Tree or any vertical Object}
 \usage{
-height(distance, top, base, type = c("angle", "slope"),
-       angleUnit = c("deg", "rad"))
+height(
+  distance,
+  top,
+  bottom,
+  type = c("angle", "slope"),
+  angleUnit = c("deg", "rad")
+)
 }
 \arguments{
-\item{distance}{numeric vector of the horizontal distance between object
+\item{distance}{numeric, vector of the horizontal distance between object
 and the person who measures angle.}
 
-\item{top, base}{numeric vector of top angle and ground angle respectively
+\item{top, bottom}{numeric vector of top angle and bottom angle respectively
 (readings from a clinometer).}
 
-\item{type}{the type of \code{top} and \code{base} measures. Either
+\item{type}{the type of \code{top} and \code{bottom} measures. Either
 \code{"angle"} or \code{"slope"}. Default is \code{"slope"}.}
 
-\item{angleUnit}{the unit of \code{top} and \code{base} measures when
+\item{angleUnit}{the unit of \code{top} and \code{bottom} measures when
 \code{type = "angle"}. Either \code{"deg"} for degree or \code{"rad"} for
 radian. Default is \code{"deg"}.}
 }
@@ -26,18 +31,21 @@ A vector of heights.
 }
 \description{
 Computes the height of tree, pillar, girder, mast or any
-vertical object. Allows both slope (in per cent) and angle measures
-(in degree or radian) . No matter the relative position of the persons who
-measures angle/slope.
+vertical object. It allows either slope (in percent) or angle (in degrees or
+radians). No matter the relative position of the persons who measures the
+angle or the slope.
 }
 \examples{
 height(10, 80, 17)
-height(17, top = -18, base = -113)
-height(distance = 18, top = 42, base = -12, type = "angle", angleUnit = "deg")
-height(distance = 18:21, top = 42:45, base = -12:-15, type = "angle", angleUnit = "deg")
-## Bellow shows warning messages
-height(distance = 18:21, top = -42:-45, base = -12:-15, type = "angle", angleUnit = "deg")
-}
-\author{
-Narcisse Yehouenou \email{narcisstar211@gmail.com}
+height(17, top = -18, bottom = -113)
+height(distance = 18, top = 42, bottom = -12, type = "angle", angleUnit = "deg")
+height(
+  distance = 18:21, top = 42:45, bottom = -12:-15, type = "angle",
+  angleUnit = "deg"
+)
+## Below shows warning messages
+height(
+  distance = 18:21, top = -42:-45, bottom = -12:-15, type = "angle",
+  angleUnit = "deg"
+)
 }

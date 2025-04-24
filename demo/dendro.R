@@ -15,10 +15,14 @@ Tree$DBH <- dbh(Tree$circum)
 head(Tree)
 
 ## ----Height estimation--------------------------------------------------------
-Tree$upHeight <- height(distance = Tree$dist, top = Tree$up, base = Tree$down,
-                        type = "angle", angleUnit = "deg")
-Tree$futHeight <- height(distance = Tree$dist, top = Tree$fut, base = Tree$down,
-                         type = "angle", angleUnit = "deg")
+Tree$upHeight <- height(
+  distance = Tree$dist, top = Tree$up, base = Tree$down,
+  type = "angle", angleUnit = "deg"
+)
+Tree$futHeight <- height(
+  distance = Tree$dist, top = Tree$fut, base = Tree$down,
+  type = "angle", angleUnit = "deg"
+)
 head(Tree)
 
 ## ----round-------------------------------------------------------
@@ -33,7 +37,7 @@ Tree$up.slope <- round(Tree$up.slope)
 Tree
 
 ## ----ind basal----------------------------------------------------------------
-Tree$basal <- basal_i(dbh = Tree$DBH/100)
+Tree$basal <- basal_i(dbh = Tree$DBH / 100)
 Tree$basal <- round(Tree$basal, 4)
 Tree
 
@@ -44,7 +48,7 @@ Lorey
 ## ---- Remark--------------------------------------------------------------
 Height.Mean <- mean(Tree$upHeight)
 Height <- c(Height.Mean, Lorey)
-names(Height) <- c("Mean of Height(m)" ,"Lorey height(m)")
+names(Height) <- c("Mean of Height(m)", "Lorey height(m)")
 Height
 
 ## ----Mean diameter------------------------------------------------------------
@@ -54,7 +58,7 @@ Dm
 ## ---- Remark 2--------------------------------------------------------------
 Diam <- mean(Tree$DBH)
 Diameter <- c(Diam, Dm)
-names(Diameter) <- c("Simple mean of Diameter(cm)" ,"Mean diameter(cm)")
+names(Diameter) <- c("Simple mean of Diameter(cm)", "Mean diameter(cm)")
 Diameter
 
 rm(Diam, Diameter, Dm, Height, Height.Mean, Lorey, Tree)

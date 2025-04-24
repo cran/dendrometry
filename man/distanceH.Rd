@@ -4,18 +4,22 @@
 \alias{distanceH}
 \title{Horizontal distance}
 \usage{
-distanceH(distance, angle, type = c("angle", "slope"),
-          angleUnit = c("deg", "rad"))
+distanceH(
+  distance,
+  angle,
+  type = c("slope", "angle"),
+  angleUnit = c("deg", "rad")
+)
 }
 \arguments{
-\item{distance}{numeric vector of the distance measured on sloping area.}
+\item{distance}{numeric, vector of the distance measured on sloping area.}
 
-\item{angle}{numeric vector of angle values.}
+\item{angle}{numeric, vector of angle or slope values.}
 
-\item{type}{type of \code{angle}. Either \code{"angle"} or
-\code{"slope"}. Default is \code{"slope"}.}
+\item{type}{character, type of \code{angle} argument.
+Either \code{"angle"} or \code{"slope"}. Default is \code{"slope"}.}
 
-\item{angleUnit}{unit of \code{angle} measures when
+\item{angleUnit}{character, unit of \code{angle} measures if
 \code{type = "angle"}. Either \code{"deg"} for degree or \code{"rad"} for
 radian. Default is \code{"deg"}.}
 }

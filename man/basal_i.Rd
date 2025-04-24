@@ -3,25 +3,28 @@
 \name{basal_i}
 \alias{basal_i}
 \alias{basal2dbh}
-\title{Individual basal area}
+\title{Individual Basal Area and DBH (diameter)}
 \usage{
-basal2dbh(basal)
-
 basal_i(dbh, circum = NULL)
+
+basal2dbh(basal)
 }
 \arguments{
-\item{dbh}{numeric vector of diameter.}
+\item{dbh}{numeric, vector of diameter.}
 
-\item{circum}{numeric vector of circumference. Is used only when \code{dbh}
+\item{circum}{numeric, vector of circumference. Is used only when \code{dbh}
 is not given.}
 
 \item{basal}{numeric, individual basal area.}
 }
 \value{
-\code{basal_i} returns individual basal area while \code{basal2dbh} returns DBH.
+\code{basal_i} returns individual basal area while \code{basal2dbh}
+returns DBH.
 }
 \description{
-The area of a circle of diameter \code{dbh}.
+\code{basal_i} computes the basal area of a tree stem
+(individual), the area of a circle of diameter \code{dbh}. \cr
+\code{basal2dbh} computes the dbh (diameter) based on the basal area.
 }
 \details{
 If \code{circum} is given, \code{dbh} is not used.
@@ -30,4 +33,5 @@ If \code{circum} is given, \code{dbh} is not used.
 basal_i(dbh = 10)
 basal_i(circum = 31.41)
 basal2dbh(78.53982)
+
 }

@@ -7,20 +7,25 @@
 loreyHeight(basal, height)
 }
 \arguments{
-\item{basal}{numeric, individual basal areas.}
+\item{basal}{numeric, vector of trees' individual basal area.}
 
-\item{height}{numeric vector of individual heights.}
+\item{height}{numeric, vector of trees' individual height.}
 }
 \value{
-Average Lorey height of a species.
+Average Lorey height of a stand.
 }
 \description{
-The average height of the trees in a plot, weighted by their basal area.
+The average height of the trees in a plot, weighted by their
+basal area.
 }
 \examples{
 set.seed(1)
-donnee <- data.frame(hauteur = rnorm(10, 12, 3), area = basal_i(rnorm(10, 100, 20)))
+donnee <- data.frame(
+  hauteur = rnorm(10, 12, 3),
+  area = basal_i(rnorm(10, 100, 20))
+)
 loreyHeight(basal = donnee$area, height = donnee$hauteur)
+
 }
 \seealso{
 \code{\link{height}}, \code{\link{basal_i}}

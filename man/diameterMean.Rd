@@ -4,14 +4,10 @@
 \alias{diameterMean}
 \title{Mean diameter}
 \usage{
-diameterMean(dbh, factor1 = "", factor2 = "", factor3 = "", data)
+diameterMean(dbh)
 }
 \arguments{
-\item{dbh}{numeric vector of diameter.}
-
-\item{factor1, factor2, factor3}{optional variables of the data frame that define subsets to consider.}
-
-\item{data}{data frame containing optional factors \code{factor1,factor2,factor3}.}
+\item{dbh}{numeric, vector of diameter.}
 }
 \value{
 Mean diameter.
@@ -21,7 +17,7 @@ Mean diameter of a forestry stand.
 }
 \examples{
 set.seed(1)
-diameter = rnorm(10, 100, 20)
+diameter <- rnorm(10, 100, 20)
 diameterMean(dbh = diameter)
 }
 \seealso{
